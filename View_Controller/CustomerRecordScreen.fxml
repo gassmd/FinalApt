@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.CustomerRecordController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Customer Record">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="72.0" prefHeight="42.0" prefWidth="107.0" text="Customer Name:" />
+        <Label layoutX="20.0" layoutY="114.0" prefHeight="49.0" prefWidth="54.0" text="Address:" />
+        <TextField fx:id="custNameFieldCustRec" editable="false" layoutX="159.0" layoutY="81.0" promptText="..." />
+        <TextField fx:id="addrFieldCustRec" editable="false" layoutX="159.0" layoutY="128.0" promptText="..." />
+        <Button layoutX="354.0" layoutY="13.0" mnemonicParsing="false" onAction="#backCustRec" prefHeight="25.0" prefWidth="89.0" text="Customers">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+        <Label layoutX="22.0" layoutY="231.0" prefHeight="25.0" prefWidth="50.0" text="Phone #: " />
+        <TextField fx:id="phoneFieldCustRec" editable="false" layoutX="159.0" layoutY="231.0" promptText="..." />
+        <Label layoutX="20.0" layoutY="143.0" prefHeight="49.0" prefWidth="64.0" text="Address 2:" />
+        <TextField fx:id="addr2FieldCustRec" editable="false" layoutX="159.0" layoutY="155.0" promptText="..." />
+        <Label layoutX="20.0" layoutY="168.0" prefHeight="49.0" prefWidth="64.0" text="Postal:" />
+        <TextField fx:id="postalFieldCustRec" editable="false" layoutX="159.0" layoutY="180.0" promptText="..." />
+      <Button layoutX="354.0" layoutY="36.0" mnemonicParsing="false" onAction="#backApptRec" prefHeight="25.0" prefWidth="89.0" text="Appointments">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

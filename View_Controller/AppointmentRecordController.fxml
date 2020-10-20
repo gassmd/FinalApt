@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="501.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AppointmentRecordController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Appointment Record">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="189.0" prefHeight="42.0" prefWidth="79.0" text="Description:" />
+        <Label layoutX="46.0" layoutY="117.0" prefHeight="53.0" prefWidth="130.0" text="Customer Name:" />
+        <TextField fx:id="descTextField" editable="false" layoutX="172.0" layoutY="184.0" prefHeight="53.0" prefWidth="247.0" promptText="..." />
+        <TextField fx:id="nameTextField" editable="false" layoutX="172.0" layoutY="131.0" prefHeight="25.0" prefWidth="247.0" promptText="Requires Valid Customer Name/Record" />
+        <Button layoutX="426.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+        <Label layoutX="51.0" layoutY="97.0" prefHeight="42.0" prefWidth="79.0" text="Title:" />
+        <TextField fx:id="apptTypeTextField" editable="false" layoutX="179.0" layoutY="269.0" prefHeight="25.0" prefWidth="247.0" promptText="..." />
+        <TextField fx:id="titleTextField" editable="false" layoutX="170.0" layoutY="105.0" prefHeight="25.0" prefWidth="247.0" />
+        <Label layoutX="50.0" layoutY="240.0" prefHeight="82.0" prefWidth="115.0" text="Appointment Type:" textAlignment="CENTER" />
+        <TextField fx:id="urlTextField" editable="false" layoutX="179.0" layoutY="313.0" promptText="..." />
+        <Label layoutX="49.0" layoutY="317.0" prefHeight="17.0" prefWidth="41.0" text="URL:" />
+        <Label layoutX="49.0" layoutY="447.0" prefHeight="17.0" prefWidth="41.0" text="Start:" />
+        <Label layoutX="244.0" layoutY="447.0" prefHeight="17.0" prefWidth="41.0" text="End:" />
+        <TextField fx:id="dateTextField" editable="false" layoutX="171.0" layoutY="389.0" promptText="..." />
+        <Label layoutX="111.0" layoutY="393.0" prefHeight="17.0" prefWidth="41.0" text="Date:" />
+        <TextField fx:id="startTextField" editable="false" layoutX="83.0" layoutY="443.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="endTextField" editable="false" layoutX="271.0" layoutY="443.0" prefHeight="25.0" prefWidth="142.0" />
+    </children>
+</AnchorPane>

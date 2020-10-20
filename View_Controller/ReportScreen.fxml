@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="381.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportScreen">
+    <children>
+        <Label fx:id="reportLabel" layoutX="35.0" layoutY="14.0" prefHeight="69.0" prefWidth="403.0" text="Reports">
+            <font>
+                <Font name="Bell MT Bold" size="18.0" />
+            </font>
+        </Label>
+
+      <TableView fx:id="reportTable" layoutX="14.0" layoutY="90.0" prefHeight="203.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="titleCol" prefWidth="117.0" text="Title" />
+          <TableColumn fx:id="typeCol" prefWidth="117.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="127.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="112.0" text="End" />
+        </columns>
+      </TableView>
+      <Button layoutX="446.0" layoutY="24.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="25.0" prefWidth="42.0" text="Back" />
+    </children>
+</AnchorPane>

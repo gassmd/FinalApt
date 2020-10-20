@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.UpdateCustomerController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Update Customer">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="113.0" prefHeight="42.0" prefWidth="107.0" text="Customer Name:" />
+        <Label layoutX="20.0" layoutY="155.0" prefHeight="53.0" prefWidth="130.0" text="New Address:" />
+        <TextField fx:id="customerNameField" layoutX="159.0" layoutY="122.0" />
+        <TextField fx:id="addressField" layoutX="159.0" layoutY="169.0" />
+        <Button layoutX="348.0" layoutY="13.0" mnemonicParsing="false" onAction="#backBtnUpdateCust" text="Back" />
+        <Label layoutX="20.0" layoutY="327.0" prefHeight="25.0" prefWidth="86.0" text="New Phone #: " />
+        <TextField fx:id="phoneField" layoutX="160.0" layoutY="327.0" />
+      <Label layoutX="20.0" layoutY="188.0" prefHeight="53.0" prefWidth="130.0" text="New Address 2:" />
+      <TextField fx:id="address2Field" layoutX="159.0" layoutY="202.0" />
+      <Label layoutX="20.0" layoutY="227.0" prefHeight="53.0" prefWidth="130.0" text="New City:" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="159.0" layoutY="241.0" prefWidth="150.0" />
+      <Button fx:id="updateButton" layoutX="180.0" layoutY="362.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="53.0" prefWidth="107.0" text="UPDATE" />
+      <Label layoutX="19.0" layoutY="280.0" prefHeight="25.0" prefWidth="86.0" text="New Postal:" />
+      <TextField fx:id="postalField" layoutX="159.0" layoutY="280.0" />
+    </children>
+</AnchorPane>

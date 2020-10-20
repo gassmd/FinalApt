@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="501.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.UpdateAppointmentController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Update Appointment">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="189.0" prefHeight="42.0" prefWidth="107.0" text="New Description:" />
+        <Label layoutX="25.0" layoutY="117.0" prefHeight="53.0" prefWidth="130.0" text="Customer Name:" />
+        <TextField fx:id="newDescTextFieldUpdateAppt" layoutX="172.0" layoutY="184.0" prefHeight="53.0" prefWidth="247.0" promptText="..." />
+        <TextField fx:id="custNameTextFieldUpdateAppt" editable="false" layoutX="172.0" layoutY="131.0" prefHeight="25.0" prefWidth="247.0" promptText="Requires Valid Customer Name/Record" />
+        <Button layoutX="426.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtnUpdateAppt" text="Back" />
+        <Button layoutX="200.0" layoutY="456.0" mnemonicParsing="false" onAction="#updateBtnUpdateAppt" prefHeight="42.0" prefWidth="107.0" text="UPDATE" />
+        <Label layoutX="37.0" layoutY="96.0" prefHeight="42.0" prefWidth="107.0" text="New Title:" />
+        <TextField fx:id="newApptTypeTextFieldUpdateAppt" layoutX="179.0" layoutY="269.0" prefHeight="25.0" prefWidth="247.0" promptText="..." />
+        <TextField fx:id="newTitleTextFieldUpdateAppt" layoutX="170.0" layoutY="105.0" prefHeight="25.0" prefWidth="247.0" />
+        <Label layoutX="16.0" layoutY="240.0" prefHeight="82.0" prefWidth="149.0" text="New Appointment Type:" textAlignment="CENTER" />
+        <TextField fx:id="newUrlTextFieldUpdateAppt" layoutX="179.0" layoutY="313.0" promptText="..." />
+        <Label layoutX="49.0" layoutY="317.0" prefHeight="17.0" prefWidth="41.0" text="URL:" />
+        <Label layoutX="14.0" layoutY="426.0" prefHeight="17.0" prefWidth="88.0" text="New Start:" />
+        <Label layoutX="246.0" layoutY="426.0" prefHeight="17.0" prefWidth="54.0" text="New End:" />
+        <ChoiceBox fx:id="newStartTimeChoiceBox" layoutX="179.0" layoutY="422.0" prefHeight="25.0" prefWidth="54.0" />
+        <ChoiceBox fx:id="newEndTimeChoiceBox" layoutX="413.0" layoutY="422.0" prefHeight="25.0" prefWidth="54.0" />
+      <TextField fx:id="newDateTextField" layoutX="171.0" layoutY="389.0" promptText="..." />
+      <Label layoutX="62.0" layoutY="393.0" prefHeight="17.0" prefWidth="71.0" text="New Date:" />
+      <TextField fx:id="startTimeTextField" layoutX="78.0" layoutY="422.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextField fx:id="endTimeTextField" layoutX="307.0" layoutY="422.0" prefHeight="25.0" prefWidth="95.0" />
+    </children>
+</AnchorPane>

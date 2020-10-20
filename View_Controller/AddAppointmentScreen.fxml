@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="501.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddAppointmentController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Add Appointment">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="149.0" prefHeight="42.0" prefWidth="107.0" text="Description:" />
+        <Label layoutX="25.0" layoutY="117.0" prefHeight="53.0" prefWidth="130.0" text="Customer Name:" />
+        <TextField fx:id="apptDescTextField" layoutX="130.0" layoutY="157.0" prefHeight="53.0" prefWidth="277.0" promptText="..." />
+        <TextField fx:id="customerTextFieldAddAppt" layoutX="130.0" layoutY="131.0" prefHeight="25.0" prefWidth="247.0" promptText="Requires Valid Customer Name/Record" />
+        <Button layoutX="426.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtnAddAppt" text="Back" />
+        <Button layoutX="222.0" layoutY="443.0" mnemonicParsing="false" onAction="#addBtnAddAppt" prefHeight="42.0" prefWidth="54.0" text="ADD" />
+      <Label layoutX="25.0" layoutY="95.0" prefHeight="42.0" prefWidth="107.0" text="Title:" />
+      <TextField fx:id="apptTypeTextField" layoutX="132.0" layoutY="280.0" prefHeight="25.0" prefWidth="247.0" promptText="..." />
+      <ChoiceBox fx:id="officeLocationChoiceBox" layoutX="130.0" layoutY="217.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="217.0" prefHeight="25.0" prefWidth="90.0" text="Office Location:" />
+      <Label layoutX="25.0" layoutY="253.0" prefHeight="17.0" prefWidth="66.0" text="Phone:" />
+      <TextField fx:id="titleTextField" layoutX="131.0" layoutY="104.0" />
+      <TextField fx:id="contactTextField" layoutX="131.0" layoutY="249.0" promptText="..." />
+      <Label layoutX="25.0" layoutY="284.0" prefHeight="17.0" prefWidth="107.0" text="Appointment Type:" />
+      <TextField fx:id="urlTextField" layoutX="131.0" layoutY="313.0" promptText="..." />
+      <Label layoutX="25.0" layoutY="317.0" prefHeight="17.0" prefWidth="41.0" text="URL:" />
+      <Label layoutX="9.0" layoutY="421.0" prefHeight="17.0" prefWidth="114.0" text="Start Time: (HH:MM)" />
+      <Label layoutX="245.0" layoutY="421.0" prefHeight="17.0" prefWidth="114.0" text="End Time: (HH:MM)" />
+      <TextField fx:id="dateField" layoutX="184.0" layoutY="383.0" prefHeight="25.0" prefWidth="130.0" promptText="..." />
+      <Label layoutX="66.0" layoutY="387.0" prefHeight="17.0" prefWidth="114.0" text="Date: (MM/DD/YY)" />
+      <TextField fx:id="startTimeTextField" layoutX="122.0" layoutY="417.0" prefHeight="25.0" prefWidth="66.0" />
+      <TextField fx:id="endTimeTextField" layoutX="354.0" layoutY="417.0" prefHeight="25.0" prefWidth="66.0" />
+      <ChoiceBox fx:id="startTimeChoiceBox" layoutX="195.0" layoutY="417.0" prefHeight="25.0" prefWidth="41.0" />
+      <ChoiceBox fx:id="endTimeChoiceBox" layoutX="427.0" layoutY="417.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label layoutX="141.0" layoutY="443.0" text="UTC" />
+      <Label layoutX="376.0" layoutY="443.0" text="UTC" />
+    </children>
+</AnchorPane>

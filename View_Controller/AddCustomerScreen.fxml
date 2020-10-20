@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddCustomerController">
+    <children>
+        <Label layoutX="25.0" layoutY="14.0" prefHeight="68.0" prefWidth="277.0" text="Add Customer">
+            <font>
+                <Font name="Bell MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="72.0" prefHeight="42.0" prefWidth="107.0" text="Customer Name:" />
+        <Label layoutX="20.0" layoutY="114.0" prefHeight="49.0" prefWidth="54.0" text="Address:" />
+        <TextField fx:id="custNameFieldAddCust" layoutX="159.0" layoutY="81.0" promptText="..." />
+        <TextField fx:id="addrFieldAddCust" layoutX="159.0" layoutY="128.0" promptText="..." />
+        <Button layoutX="348.0" layoutY="13.0" mnemonicParsing="false" onAction="#backBtnAddCust" text="Back" />
+        <Label layoutX="14.0" layoutY="243.0" prefHeight="25.0" prefWidth="50.0" text="Phone #: " />
+        <TextField fx:id="phoneFieldAddCust" layoutX="159.0" layoutY="243.0" promptText="..." />
+        <Button fx:id="addBtnAddCust" layoutX="202.0" layoutY="274.0" mnemonicParsing="false" onAction="#addBtnAddCust" prefHeight="42.0" prefWidth="64.0" text="ADD" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="159.0" layoutY="210.0" prefWidth="150.0" />
+      <Label layoutX="15.0" layoutY="210.0" prefHeight="25.0" prefWidth="98.0" text="Office Location:" />
+      <Label layoutX="20.0" layoutY="143.0" prefHeight="49.0" prefWidth="64.0" text="Address 2:" />
+      <TextField fx:id="addr2FieldAddCust" layoutX="159.0" layoutY="155.0" promptText="..." />
+      <Label layoutX="20.0" layoutY="168.0" prefHeight="49.0" prefWidth="64.0" text="Postal:" />
+      <TextField fx:id="postalFieldAddCust" layoutX="159.0" layoutY="180.0" promptText="..." />
+    </children>
+</AnchorPane>

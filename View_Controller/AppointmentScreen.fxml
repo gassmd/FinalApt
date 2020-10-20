@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="383.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AppointmentController">
+    <children>
+        <Button layoutX="24.0" layoutY="240.0" mnemonicParsing="false" onAction="#deleteAppointmentBtn" prefHeight="69.0" prefWidth="138.0" text="Delete">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font></Button>
+        <Button layoutX="24.0" layoutY="166.0" mnemonicParsing="false" onAction="#updateAppointmentBtn" prefHeight="69.0" prefWidth="138.0" text="Update">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Button>
+        <Button layoutX="24.0" layoutY="92.0" mnemonicParsing="false" onAction="#addAppointmentBtn" prefHeight="69.0" prefWidth="138.0" text="Add">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font></Button>
+        <TableView fx:id="appointmentTable" layoutX="164.0" layoutY="92.0" prefHeight="221.0" prefWidth="496.0">
+            <columns>
+            <TableColumn fx:id="titleCol" minWidth="4.0" prefWidth="120.0" text="Title" />
+            <TableColumn fx:id="contactCol" minWidth="2.0" prefWidth="73.0" text="Contact" />
+            <TableColumn fx:id="typeCol" minWidth="6.0" prefWidth="97.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="121.0" text="start" />
+            <TableColumn fx:id="endCol" prefWidth="84.0" text="end" />
+            </columns>
+        </TableView>
+        <Label layoutX="35.0" layoutY="14.0" prefHeight="69.0" prefWidth="281.0" text="Appointment Records">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="632.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtnAppointment" text="Back" />
+        <Button fx:id="refreshBtn" layoutX="625.0" layoutY="49.0" mnemonicParsing="false" onAction="#refreshBtn" text="Refresh" />
+      <Button layoutX="162.0" layoutY="313.0" mnemonicParsing="false" onAction="#showCustomerRecord" prefHeight="32.0" prefWidth="273.0" text="View Selected Customer Record">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="313.0" mnemonicParsing="false" onAction="#apptDetailsBtn" prefHeight="11.0" prefWidth="214.0" text="Appointment Details">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="timeZoneLabel" layoutX="340.0" layoutY="40.0" prefHeight="17.0" prefWidth="77.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="356.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.WelcomeController">
+    <children>
+        <Button layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#showReports" prefHeight="69.0" prefWidth="282.0" text="Reports">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font></Button>
+        <Button layoutX="14.0" layoutY="166.0" mnemonicParsing="false" onAction="#showAppointmentScreen" prefHeight="69.0" prefWidth="282.0" text="Appointments">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Button>
+        <Button layoutX="14.0" layoutY="97.0" mnemonicParsing="false" onAction="#showCustomerScreen" prefHeight="69.0" prefWidth="282.0" text="Customer Records">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Button>
+        <Label layoutX="35.0" layoutY="14.0" prefHeight="69.0" prefWidth="152.0" text="Welcome!">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Label>
+      <TableView fx:id="calendar" layoutX="296.0" layoutY="97.0" prefHeight="206.0" prefWidth="434.0">
+         <columns>
+            <TableColumn fx:id="titleCol" prefWidth="146.0" text="Title" />
+            <TableColumn fx:id="startTimeCol" prefWidth="152.0" text="Start Time" />
+            <TableColumn fx:id="locationCol" prefWidth="135.0" text="Location" />
+         </columns></TableView>
+      <Label layoutX="472.0" layoutY="29.0" prefHeight="39.0" prefWidth="83.0" text="Calendar">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="monthlyChoiceBox" layoutX="547.0" layoutY="63.0" onInputMethodTextChanged="#refreshCalendarMonthly" prefHeight="25.0" prefWidth="118.0" />
+      <Button layoutX="667.0" layoutY="56.0" mnemonicParsing="false" onAction="#refreshCalendarMonthly" prefHeight="39.0" prefWidth="61.0" text="Refresh Monthly" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Label layoutX="583.0" layoutY="48.0" prefHeight="17.0" prefWidth="47.0" text="Monthly" />
+      <Label layoutX="211.0" layoutY="63.0" prefHeight="17.0" prefWidth="96.0" text="Week following:" />
+      <TextField fx:id="weekTextField" layoutX="307.0" layoutY="59.0" prefHeight="25.0" prefWidth="96.0" promptText="MM/DD/YY" />
+      <Label layoutX="328.0" layoutY="41.0" prefHeight="17.0" prefWidth="55.0" text="Weekly" />
+      <Button layoutX="410.0" layoutY="52.0" mnemonicParsing="false" onAction="#refreshCalendarWeekly" prefHeight="39.0" prefWidth="54.0" text="Refresh Weekly" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

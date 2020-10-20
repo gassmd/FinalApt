@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="348.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportsController">
+    <children>
+        <Button layoutX="27.0" layoutY="235.0" mnemonicParsing="false" onAction="#getAppointmentByName" prefHeight="69.0" prefWidth="256.0" text="Customer Report">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font></Button>
+        <Button layoutX="27.0" layoutY="166.0" mnemonicParsing="false" onAction="#getUserReport" prefHeight="69.0" prefWidth="256.0" text="Consultant Schedule">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font></Button>
+        <Button layoutX="27.0" layoutY="97.0" mnemonicParsing="false" onAction="#getMonthlyReport" prefHeight="69.0" prefWidth="256.0" text="Monthly Report">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font></Button>
+        <Label layoutX="35.0" layoutY="14.0" prefHeight="69.0" prefWidth="152.0" text="Reports">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Label>
+      <Button layoutX="351.0" layoutY="24.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+      <ChoiceBox fx:id="monthChoiceBox" layoutX="290.0" layoutY="119.0" prefHeight="25.0" prefWidth="110.0" />
+      <ChoiceBox fx:id="userChoiceBox" layoutX="290.0" layoutY="188.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="customerNameTextField" layoutX="290.0" layoutY="257.0" prefHeight="25.0" prefWidth="110.0" promptText="Customer Name..." />
+    </children>
+</AnchorPane>
